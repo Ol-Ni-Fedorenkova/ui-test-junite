@@ -1,4 +1,4 @@
-package org.example.pages;
+package example.pages;
 
 public enum PageType {
         MAIN,

@@ -1,11 +1,10 @@
-package org.example.pages;
+package example.pages;
 
-import dev.failsafe.internal.util.Assert;
-import org.example.elements.BaseElement;
-import org.example.elements.Button;
-import org.example.elements.Locators;
-import org.example.utils.DriverManager;
-import org.example.utils.Messages;
+import example.elements.BaseElement;
+import example.elements.Button;
+import example.elements.Locators;
+import example.utils.DriverManager;
+import example.utils.Messages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;

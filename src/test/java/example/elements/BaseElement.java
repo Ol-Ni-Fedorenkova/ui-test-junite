@@ -1,8 +1,7 @@
-package org.example.elements;
+package example.elements;
 
+import example.utils.DriverManager;
 import lombok.Data;
-import org.example.utils.DriverManager;
-import org.example.utils.PropertiesManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 

@@ -1,11 +1,11 @@
-package org.example.pages;
+package example.pages;
 
-import org.example.elements.BaseElement;
-import org.example.elements.Button;
-import org.example.elements.Input;
-import org.example.elements.Locators;
-import org.example.utils.DriverManager;
-import org.example.utils.Messages;
+import example.elements.BaseElement;
+import example.elements.Locators;
+import example.utils.DriverManager;
+import example.utils.Messages;
+import example.elements.Button;
+import example.elements.Input;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;

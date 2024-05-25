@@ -1,4 +1,4 @@
-package org.example.utils;
+package example.utils;
 
 import lombok.Data;
 import org.apache.logging.log4j.LogManager;
@@ -16,7 +16,7 @@ public class PropertiesManager {
 
     private PropertiesManager() {
         try {
-            properties.load(new FileInputStream("src/main/resources/application.properties"));
+            properties.load(new FileInputStream("src/application.properties"));
         } catch (IOException e) {
             LOGGER.error("Не найден файл src/main/resources/application.properties");
         }

@@ -1,4 +1,4 @@
-package org.example.elements;
+package example.elements;
 
 public class Button extends BaseElement {
 

@@ -1,14 +1,10 @@
-package utils;
-
-import org.example.pages.BasePage;
-import org.example.utils.DriverManager;
-import org.example.utils.PropertiesManager;
+import example.utils.DriverManager;
+import example.utils.PropertiesManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.WebDriver;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 

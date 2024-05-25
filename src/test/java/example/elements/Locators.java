@@ -1,4 +1,4 @@
-package org.example.elements;
+package example.elements;
 
 public enum Locators {
     BUTTON_LINK(".//a[normalize-space(text())='%s']"),
