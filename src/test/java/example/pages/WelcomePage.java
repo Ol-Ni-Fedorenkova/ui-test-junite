@@ -10,14 +10,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
-public class WelcomePage extends BasePage{
+public class WelcomePage extends BasePage {
 
     @Override
     public BaseElement getElement(String name) {
-        switch (name){
+        switch (name) {
             case "Личный кабинет":
                 return new Button(name, Locators.BUTTON_LINK.getValue());
-            default: throw new AssertionError(String.format(Messages.MESSAGE_ERROR_NOT_INSTANCE_ELEMENT_ON_PAGE.getValue(), PageType.WELCOME.name(), name));
+            default:
+                throw new AssertionError(String.format(Messages.MESSAGE_ERROR_NOT_INSTANCE_ELEMENT_ON_PAGE.getValue(), PageType.WELCOME.name(), name));
         }
     }
 

@@ -21,8 +21,4 @@ public class BaseTest {
     public static void tearDown() {
         DriverManager.getDriver().quit();
     }
-
-//    public BasePage open() {
-//
-//    }
 }

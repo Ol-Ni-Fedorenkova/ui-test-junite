@@ -1,4 +1,3 @@
-import io.qameta.allure.Description;
 import example.pages.PageType;
 import example.pages.WelcomePage;
 import io.qameta.allure.Feature;
