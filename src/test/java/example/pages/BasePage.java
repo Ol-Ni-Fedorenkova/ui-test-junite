@@ -1,6 +1,7 @@
 package example.pages;
 
 import example.elements.BaseElement;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -12,8 +13,8 @@ public abstract class BasePage {
 
     public abstract void checkLoadPage();
 
-    @Step("загрузка страницы {name}")
     public BasePage loadPage(PageType name) {
+        Allure.step("загрузка страницы " + name.getValue());
         BasePage page = new PageFactory().getPage(name);
         page.checkLoadPage();
         return page;

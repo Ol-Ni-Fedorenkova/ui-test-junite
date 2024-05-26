@@ -18,5 +18,12 @@ public class DriverManager {
         return driver;
     }
 
+    public static void driverKill() {
+        if(driver!=null) {
+            driver.quit();
+            driver = null;
+        }
+    }
+
 
 }

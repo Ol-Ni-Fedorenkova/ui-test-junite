@@ -2,6 +2,7 @@ package example.pages;
 
 import example.elements.BaseElement;
 import example.elements.Button;
+import example.elements.Input;
 import example.elements.Locators;
 import example.utils.DriverManager;
 import example.utils.Messages;
@@ -17,6 +18,10 @@ public class WelcomePage extends BasePage {
         switch (name) {
             case "Личный кабинет":
                 return new Button(name, Locators.BUTTON_LINK.getValue());
+            case "Поиск по названию":
+                return new Input(name, Locators.INPUT_PLACEHOLDER.getValue());
+            case "Найти":
+                return new Button(name, Locators.BUTTON.getValue());
             default:
                 throw new AssertionError(String.format(Messages.MESSAGE_ERROR_NOT_INSTANCE_ELEMENT_ON_PAGE.getValue(), PageType.WELCOME.name(), name));
         }
