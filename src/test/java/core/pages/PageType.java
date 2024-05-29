@@ -1,7 +1,7 @@
-package example.pages;
+package core.pages;
 
 public enum PageType {
-    MAIN ("Главная страница"),//TODO Добавить нормальные имена для страниц (для отображения в отчете)
+    MAIN ("Главная страница"),
     WELCOME ("Страница приветствия"),
     AUTH ("Страница авторизации");
 

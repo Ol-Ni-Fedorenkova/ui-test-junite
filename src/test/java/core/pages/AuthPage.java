@@ -1,11 +1,11 @@
-package example.pages;
+package core.pages;
 
-import example.elements.BaseElement;
-import example.elements.Button;
-import example.elements.Input;
-import example.elements.Locators;
-import example.utils.DriverManager;
-import example.utils.Messages;
+import core.elements.BaseElement;
+import core.elements.Button;
+import core.elements.Input;
+import core.elements.Locators;
+import core.utils.DriverManager;
+import core.utils.Messages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -30,5 +30,17 @@ public class AuthPage extends BasePage {
     public void checkLoadPage() {
         Wait<WebDriver> wait = new FluentWait<>(DriverManager.getDriver());
         wait.until(ExpectedConditions.visibilityOf(getElement("Логин").getElement()));
+    }
+
+    public BaseElement getLoginInp() {
+        return getElement("Логин");
+    }
+
+    public BaseElement getPasswordInp() {
+        return getElement("Пароль");
+    }
+
+    public BaseElement getSubmitBtn() {
+        return getElement("Вход");
     }
 }

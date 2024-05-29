@@ -1,6 +1,4 @@
-package example.utils;
-
-import lombok.Data;
+package core.utils;
 
 
 public enum Messages {

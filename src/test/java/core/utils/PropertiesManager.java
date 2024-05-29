@@ -1,4 +1,4 @@
-package example.utils;
+package core.utils;
 
 import lombok.Data;
 import org.apache.logging.log4j.LogManager;

@@ -1,17 +1,21 @@
-package example.pages;
+package core.pages;
 
-import example.elements.BaseElement;
-import example.elements.Button;
-import example.elements.Input;
-import example.elements.Locators;
-import example.utils.DriverManager;
-import example.utils.Messages;
+import core.elements.BaseElement;
+import core.elements.Button;
+import core.elements.Input;
+import core.elements.Locators;
+import core.utils.DriverManager;
+import core.utils.Messages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
 public class WelcomePage extends BasePage {
+
+    private Button toAuthPageBtn;
+    private Input searchByNameInp;
+    private Button searchBtn;
 
     @Override
     public BaseElement getElement(String name) {
@@ -31,5 +35,17 @@ public class WelcomePage extends BasePage {
     public void checkLoadPage() {
         Wait<WebDriver> wait = new FluentWait<>(DriverManager.getDriver());
         wait.until(ExpectedConditions.visibilityOf(getElement("Личный кабинет").getElement()));
+    }
+
+    public BaseElement getToAuthPageBtn() {
+        return getElement("Личный кабинет");
+    }
+
+    public BaseElement getSearchByNameInp() {
+        return getElement("Поиск по названию");
+    }
+
+    public BaseElement getSearchBtn() {
+        return getElement("Найти");
     }
 }
